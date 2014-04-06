@@ -62,8 +62,6 @@ endif
 
 colorscheme torte
 set fenc=utf-8
-set lines=60
-set columns=120
 set nu
 set ts=4 sw=4
 set expandtab
