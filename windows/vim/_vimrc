@@ -105,7 +105,9 @@ endif " has("autocmd")
 
 
 colorscheme torte
+set enc=utf-8
 set fenc=utf-8
+set ambiwidth=double
 set lines=60
 set columns=120
 set nu
