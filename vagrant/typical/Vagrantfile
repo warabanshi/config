@@ -1,0 +1,9 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "centos6.6-minimal"
+  config.vm.hostname = "erlang"
+  config.vm.network :private_network, ip: "172.0.0.100", virtualbox__intnet: "intnet"
+  config.vm.network :private_network, ip: "192.168.56.102"
+end
