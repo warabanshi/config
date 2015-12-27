@@ -45,7 +45,4 @@ edit `/usr/lib64/python2.7/site-packages/matplotlib/mpl-data/matplotlibrc`
 ## edit exists theme
 
 Themes are there in `/usr/share/`. In this time, edit `sddm` theme.  
-edit `/usr/share/sddm/themes/breeze/theme.conf.user` and `/usr/share/sddm/themes/breeze/theme.conf` like below
-
-    [General]
-    background=/home/warabanshi/Pictures/1920x1080.jpg
+edit `/usr/share/sddm/themes/breeze/theme.conf.user` and replace properly image file under `/usr/share/kde4/apps/ksplash/Themes/ksplashx-suse/`
