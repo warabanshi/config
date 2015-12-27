@@ -38,3 +38,14 @@ edit `/usr/lib64/python2.7/site-packages/matplotlib/mpl-data/matplotlibrc`
     # referring to the module name (which must be in the PYTHONPATH) as
     # 'module://my_backend'.
     backend      : Agg    <- edit this line
+
+
+# change login background image in openSUSE Tumbleweed
+
+## edit exists theme
+
+Themes are there in `/usr/share/`. In this time, edit `sddm` theme.  
+edit `/usr/share/sddm/themes/breeze/theme.conf.user` and `/usr/share/sddm/themes/breeze/theme.conf` like below
+
+    [General]
+    background=/home/warabanshi/Pictures/1920x1080.jpg
