@@ -46,3 +46,26 @@ edit `/usr/lib64/python2.7/site-packages/matplotlib/mpl-data/matplotlibrc`
 
 Themes are there in `/usr/share/`. In this time, edit `sddm` theme.  
 edit `/usr/share/sddm/themes/breeze/theme.conf.user` and replace properly image file under `/usr/share/wallpapers/openSUSEdefault/contents/images/`
+
+# fix chrome unavailable to use Japanese input method
+
+Now, I don't know why in detail but my chrome browser couldn't accept to input in japanese. But it works in other applications.
+Tentatively, I saw this post (https://bbs.archlinux.org/viewtopic.php?id=173675) and try appneding following lines in `/etc/X11/xinit/xinitrc` and it works!
+
+```
+--- xinitrc.org 2016-03-03 02:51:13.197128973 +0900
++++ xinitrc     2016-03-03 02:42:33.521001536 +0900
+@@ -47,6 +47,12 @@
+ # Add your own lines here...
+ #
+ 
++#### append ####
++export GTK_IM_MODULE=xim #Fix for Chrome
++export QT_IM_MODULE=xim #Not sure if this works or not, but whatever
++export XMODIFIERS=@im=ibus
++ibus-daemon -drx
++
+ # day planer deamon
+ # pland &
+ 
+```
