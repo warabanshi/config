@@ -1,3 +1,27 @@
+# making python environment
+
+## pyenv
+
+- https://github.com/yyuu/pyenv
+- http://qiita.com/akito1986/items/be5dcd1a502aaf22010b
+
+## virtualenv
+
+- http://dev.classmethod.jp/server-side/language/python-virtualenv-tutorial/
+
+python >= 3.4 is equiped pip in default
+
+### start virtualenv
+
+    $ pip install virtualenv
+    $ cd /path/to/working/dir
+    $ virtualenv [-p /path/to/pythone] (env name)
+    $ . (env name)/bin/activate
+
+### end virtualenv
+    
+    $ deactivate
+
 # install pylab
 
 ## append packages on openSUSE Tumbleweed
