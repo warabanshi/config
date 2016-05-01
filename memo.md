@@ -5,17 +5,22 @@
 - https://github.com/yyuu/pyenv
 - http://qiita.com/akito1986/items/be5dcd1a502aaf22010b
 
-## virtualenv
+## virtualenv (python2)
 
 - http://dev.classmethod.jp/server-side/language/python-virtualenv-tutorial/
 
+## install virtualenv for python3
+
 python >= 3.4 is equiped pip in default
+
+    # pip3 install virtualenv
 
 ### start virtualenv
 
     $ pip install virtualenv
     $ cd /path/to/working/dir
-    $ virtualenv [-p /path/to/pythone] (env name)
+    $ virtualenv [-p /path/to/pythone] (env name)                       ### python2 ###
+    $ virtualenv [-p /path/to/pythone] --no-site-packages (env name)    ### python3 ###
     $ . (env name)/bin/activate
 
 ### end virtualenv
