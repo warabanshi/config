@@ -32,7 +32,7 @@ python >= 3.4 is equiped pip in default
 ## append packages on openSUSE Tumbleweed
 
 freetype, freetype-devel, libpng-devel, libjpeg8-devel, gcc-c++, liblapacke3, blas-devel, python-devel, python-scipy, 
-python-numpy-devel, python-pandas, python-sympy, python-nose, cblas-devel, libatlas3-devel
+python-numpy-devel, python-pandas, python-sympy, python-nose, cblas-devel, libatlas3-devel, python-tk
 
 ## change backend if show() doesn't working
 
@@ -53,6 +53,11 @@ python-numpy-devel, python-pandas, python-sympy, python-nose, cblas-devel, libat
 
     >>> import matplotlib
     >>> matplotlib.rcParams['backend'] = "TkAgg"
+    
+### check actual pylab library place
+
+    >>> import pylab
+    >>> pylab.__file__
 
 ## change default backend
 
@@ -68,6 +73,11 @@ edit `/usr/lib64/python2.7/site-packages/matplotlib/mpl-data/matplotlibrc`
     # 'module://my_backend'.
     backend      : Agg    <- edit this line
 
+## check backends which you are able to use
+
+    matplotlib.rcsetup.interactive_bk
+    matplotlib.rcsetup.non_interactive_bk
+    matplotlib.rcsetup.all_backends
 
 # change login background image in openSUSE Tumbleweed
 
