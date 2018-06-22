@@ -1,1 +1,8 @@
 set guifont=ÇlÇr_ÉSÉVÉbÉN:h9:cSHIFTJIS
+set encoding=utf-8
+set rop=type:directx
+
+source $VIMRUNTIME/delmenu.vim
+set langmenu=ja_jp.utf-8
+source $VIMRUNTIME/menu.vim
+
