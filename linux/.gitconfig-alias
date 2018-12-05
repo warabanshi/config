@@ -1,2 +1,3 @@
 [alias]
     tree = log --all --graph --decorate --oneline --simplify-by-decoration
+    tree-long = log --all --graph --decorate --oneline
