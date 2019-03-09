@@ -68,6 +68,7 @@ set expandtab
 set fileformats=unix,dos,mac
 set nobackup
 set smartindent
+set noswapfile
 
 autocmd BufRead,BufNewFile *.py setfiletype python
 autocmd BufRead,BufNewFile *.rb setfiletype ruby
