@@ -21,6 +21,12 @@ $ . /path/to/env
 $ pip install --upgrade pip
 ```
 
+### installed package on opensuse Leap15.2 for pyenv
+
+```
+$ zypper in -y gcc zlib-devel readline-devel libbz2-devel libopenssl-devel sqlite3-devel
+```
+
 ### install pyenv
 
 ```
@@ -36,3 +42,22 @@ for python syntax check, install flake8 and set syntactic vim plugin
 ```
 $ pip install flake8
 ```
+
+### setup minikube
+
+prerequisite
+- more than 2 available CPUs
+- turn on nested VT-s/AMD-V on virtualbox manager (settings -> system -> processor)
+
+1. install required package
+
+    $ sudo zypper in docker kvm
+
+2. set docker running on boot (and reboot system if required)
+
+3. add docker group
+
+    $ usermod -aG docker (username) && newgrp docker
+
+4. install minikube follows below instruction. you shoudn't use `zypper in minikube` because it will install too old version.
+    https://kubernetes.io/ja/docs/tasks/tools/install-minikube/
