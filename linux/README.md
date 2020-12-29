@@ -61,3 +61,7 @@ prerequisite
 
 4. install minikube follows below instruction. you shoudn't use `zypper in minikube` because it will install too old version.
     https://kubernetes.io/ja/docs/tasks/tools/install-minikube/
+
+5. run minikube
+
+    $ minikube start --driver=docker

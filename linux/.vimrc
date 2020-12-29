@@ -72,6 +72,8 @@ set noswapfile
 
 autocmd BufRead,BufNewFile *.py setfiletype python
 autocmd BufRead,BufNewFile *.rb setfiletype ruby
+autocmd BufRead,BufNewFile *.yml setfiletype yaml
+autocmd BufRead,BufNewFile *.yaml setfiletype yaml
 
 "
 " for syntastic (https://github.com/scrooloose/syntastic)
