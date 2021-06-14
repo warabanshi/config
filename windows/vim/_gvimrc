@@ -1,5 +1,6 @@
-set guifont=‚l‚r_ƒSƒVƒbƒN:h9:cSHIFTJIS
+set guifont=â€šlâ€šr_Æ’SÆ’VÆ’bÆ’N:h9:cSHIFTJIS
 set encoding=utf-8
+set fileencodings=utf-8,euc-jp,sjis
 set rop=type:directx
 
 source $VIMRUNTIME/delmenu.vim
