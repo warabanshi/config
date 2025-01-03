@@ -1,4 +1,4 @@
-set guifont=‚l‚r_ƒSƒVƒbƒN:h9:cSHIFTJIS
+set guifont=HackGen_Console_NF:h11:cANSI:qDRAFT
 set encoding=utf-8
 set fileencodings=utf-8,euc-jp,sjis
 set rop=type:directx
